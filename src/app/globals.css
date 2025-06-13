@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --header-height: 72px;
+    }
+    @media (min-width: 768px) {
+        :root {
+          --header-height: 81px; /* Height for tablets and above */
+        }
+      }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.kk-bright-teal-gradient{
+    background: radial-gradient(circle, #00F6BB 0%, #01493C 100%);
+}
+
+.kk-midnight-gradient{
+    background: radial-gradient(circle, #263B4E 0%, #001932 100%);
+}
+
+@media(min-width:768px){
+    .kk-midnight-gradient-md-only{
+        background: radial-gradient(circle, #263B4E 0%, #001932 100%);
+    }
+}
+
+.kk-light-gradient{
+    background: radial-gradient(circle, #FFFFFF 0%, #7A848E 100%);
+}
+
+.slider {
+    @apply appearance-none h-2 rounded-full w-full;
+    background: linear-gradient(90deg, #E2E2E2 60%, #E2E2E2 60%);
+}
+  
+/* For Webkit browsers (Chrome, Safari) */
+.slider::-webkit-slider-thumb {
+    @apply appearance-none h-6 w-6 rounded-full bg-kk-bright-teal-100 border-none outline-none cursor-grab;
+}
+
+/* For Firefox */
+.slider::-moz-range-thumb {
+    @apply appearance-none h-6 w-6 rounded-full bg-kk-bright-teal-100  border-none outline-none cursor-grab;
+}
+
+/* For Internet Explorer and Edge */
+.slider::-ms-thumb {
+    @apply appearance-none h-6 w-6 rounded-full bg-kk-bright-teal-100  border-none outline-none cursor-grab;
+}
+
+.no-spinner {
+    -webkit-appearance: none; /* Chrome, Safari */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: none; /* Other browsers */
+}
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari */
+}
+.no-spinner::-moz-inner-spin-button,
+.no-spinner::-moz-spin-button {
+    display: none; /* Firefox */
+}
+
+.container{
+    @apply max-w-[1350px] mx-auto px-6;
+}
+.container-sm{
+    @apply max-w-[910px] mx-auto px-6;
+}
+.container-xs{
+    @apply max-w-[514px] mx-auto px-6;
+}
+
+.button-icon svg {
+    @apply w-full h-full;
+}
