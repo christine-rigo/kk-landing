@@ -6,7 +6,7 @@ interface HeroProps {}
 
 const HeroHolding: React.FC<HeroProps> = () => {
   return (
-    <section className="relative md:min-h-[724px] lg:min-h-[924px] flex items-center max-md:pt-14 bg-[url('/hero-bg-mobile.webp')] md:bg-[url('/hero-holding.png')] bg-cover bg-center">
+    <section className="relative md:min-h-[724px] lg:min-h-[924px] flex items-center pt-12 pb-8 lg:pt-14 lg:pt-0 bg-[url('/hero-bg-mobile.webp')] md:bg-[url('/hero-holding.png')] bg-cover bg-center">
       <div className="container relative max-md:!px-0">
         <div className="flex items-center gap-10 max-md:flex-col max-md:gap-4">
           <div className="max-md:text-center">

@@ -39,7 +39,7 @@ export default function HoldingPage() {
       <main className="text-kk-midnight-100 bg-kk-ivory">
         <HeroHolding />
       </main>
-      <footer className="bg-kk-ivory pt-24 pb-6">
+      <footer className="bg-kk-ivory pt-12 lg:pt-24 pb-6">
         <div className="container">
           <div className="flex items-center justify-center gap-1">
             <Image className="max-md:max-w-24" src={`/kalo-logo-1.svg`} alt="" width={180} height={70} />
@@ -47,21 +47,22 @@ export default function HoldingPage() {
           </div>
           <p className="text-center font-semibold mt-6">Got crypto? Let&apos;s play</p>
           <div className="grid grid-cols-2 gap-8 md:justify-items-center max-w-md mx-auto mt-11"></div>
-          <div className="flex justify-center items-center w-fit max-w-md mx-auto gap-7 border-t pt-10 border-kk-midnight-50 max-md:pt-8 max-md:mt-8">
+          <div className="flex flex-col lg:flex-row justify-center items-center w-fit max-w-md mx-auto gap-7 border-t pt-10 border-kk-midnight-50 max-md:pt-8 max-md:mt-8">
             <figure>
               <a href="https://www.gamblersanonymous.org" target="_blank">
                 <Image className="max-md:max-w-28" src={`/ga.png`} alt="" width={186} height={76} />
               </a>
             </figure>
             <figure>
-              <Image className="max-md:max-w-28" src={`/ga-t.png`} alt="" width={186} height={76} />
+              <Image className="max-sm:w-20 max-md:max-w-28" src={`/ga-t.png`} alt="" width={186} height={76} />
             </figure>
             <figure>
-              <Image className="max-md:max-w-28" src={`/18+.png`} alt="" width={186} height={76} />
+              <Image className="max-sm:w-20 max-md:max-w-28" src={`/18+.png`} alt="" width={186} height={76} />
             </figure>
             {mounted && (
               <div
                 ref={sealRef}
+                className="max-sm:w-20"
                 id="anj-f63a9361-540e-4315-afac-1065a440c415"
                 data-anj-seal-id="f63a9361-540e-4315-afac-1065a440c415"
                 data-anj-image-size="128"
@@ -69,7 +70,7 @@ export default function HoldingPage() {
               ></div>
             )}
           </div>
-          <div className="text-center max-md:text-sm pt-12 pb-8 border-t border-kk-midnight-50 mt-8 md:mt-11">
+          <div className="text-center text-xs lg:text-sm pt-12 pb-8 border-t border-kk-midnight-50 mt-8 md:mt-11">
             <p className="max-w-screen-lg mx-auto">
               KALOKALO.IO is owned and operated by Kalo OAB B.V. (registration number 167484) and with its registered
               address at Zuikertuintjeweg Z/N (Zuikertuin Tower), Willemstad, Curacao. You can email us at{" "}
