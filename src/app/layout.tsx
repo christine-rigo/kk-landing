@@ -43,7 +43,7 @@ export default function RootLayout({
       <head>
         <Script
           type="text/javascript"
-          src="https://f63a9361-540e-4315-afac-1065a440c415.snippet.anjouangaming.org/anj-seal.js"
+          src="https://67201f84-e40b-4bdd-8a07-d4965ca9d3b4.snippet.anjouangaming.org/anj-seal.js"
           strategy="beforeInteractive"
         />
         <Script 

@@ -15,7 +15,7 @@ export default function HoldingPage() {
   useEffect(() => {
     if (!mounted) return;
 
-    const seal = (window as any).anj_f63a9361_540e_4315_afac_1065a440c415;
+    const seal = (window as any).anj_67201f84_e40b_4bdd_8a07_d4965ca9d3b4;
     if (seal?.init && sealRef.current) {
       try {
         seal.init();
@@ -63,8 +63,8 @@ export default function HoldingPage() {
               <div
                 ref={sealRef}
                 className="max-sm:w-20"
-                id="anj-f63a9361-540e-4315-afac-1065a440c415"
-                data-anj-seal-id="f63a9361-540e-4315-afac-1065a440c415"
+                id="anj-67201f84-e40b-4bdd-8a07-d4965ca9d3b4"
+                data-anj-seal-id="67201f84-e40b-4bdd-8a07-d4965ca9d3b4"
                 data-anj-image-size="128"
                 data-anj-image-type="basic-small"
               ></div>
